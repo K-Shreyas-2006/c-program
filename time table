@@ -1,0 +1,29 @@
+// Program: time table
+#include <stdio.h>
+int main() {
+ int ch;
+ printf("enter the period");
+ scanf("%d",&ch);
+ switch(ch){
+ case 1:
+ printf("subject:maths\n");
+ printf("time: 8:15 to 9:15");
+ break;
+ case 2:
+    printf("subject:phy\n");
+ printf("time: 9:15 to 10:15");
+ break;
+case 3:
+ printf("subject:break\n");
+ printf("time: 10:15 to 11:15");
+ break;
+case 4:
+
+  printf("subject:cp\n");
+ printf("time: 11:15 to 12:15");
+ break;
+ default:
+ printf("invalid");
+ }
+ return 0 ;
+ }
