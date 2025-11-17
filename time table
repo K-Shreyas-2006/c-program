@@ -1,5 +1,5 @@
 // Program: time table
-#include <stdio.h>
+#include<stdio.h>
 int main() {
  int ch;
  printf("enter the period");
