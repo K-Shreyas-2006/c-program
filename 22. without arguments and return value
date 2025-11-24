@@ -1,0 +1,10 @@
+//hello
+
+#include <stdio.h>
+#include <stdlib.h>
+
+void greet(){
+    printf("hello \n");
+}
+int main(){
+greet();}

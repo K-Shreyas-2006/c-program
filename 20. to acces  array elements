@@ -1,0 +1,78 @@
+//program to access array elements
+#include<stdio.h>
+/*function decleration*/
+void inputarray (int *arr,int n);
+void displayarray (const int *arr, int n);
+int sumarray(const int *arr,int n);
+int countpositive( const int*arr, int n);
+int countnegitive(const int*arr,int n);
+
+int main (void){
+int arr[100];
+int n,sum,poscount, negcount;
+printf("enter the num of elements in the array(max 100):");
+if(scanf("%d",&n)!=1||n<0||n>100)
+{
+    puts("invalid size");
+    return 1;
+
+}
+inputarray (arr,n);
+printf("\n Array elements are:");
+displayarray (arr,n);
+
+    sum = sumarray(arr, n );
+    printf("\n sum of all elements = %d", sum);
+
+           poscount = countpositive (arr,n);
+           negcount= countnegitive(arr,n);
+
+           printf("\n number of positive elements =%d", poscount);
+           printf("\n number of negitive elements = %d",negcount);
+           return 0 ;
+
+}
+/* read n integers into array via pointer arthimetic*/
+void inputarray(int*arr,int n){
+printf("rnter %d elements:\n", n );
+for(int i=0; i<n;i++){
+    scanf("%d",arr+i);
+
+}
+}
+/* pointer array elements*/
+void displayarray (const int* arr,int n){
+for(int i=0; i<n;i++){
+    printf("%d",*arr+ i);
+}
+}
+ // funtion to claculate sum of array elements
+ int sumarray(int*arr,int n){
+
+ int sum = 0;
+ for(int i=0; i<n; i++){
+    sum += *(arr+i);
+
+ }
+return sum;
+ }
+ /* count positive(>0)*/
+ int countpositive(const int *arr, int n){
+ int cnt = 0;
+ for (int i=0;i<n;i++){
+ if (*(arr+i)>0)cnt ++;
+
+ }
+ return cnt;
+ {
+     int countnegitive(const int *arr, int n)
+     {
+         int cnt =0;
+         for(int i=0; i<n; i++){
+            if(*(arr+ i)<0)cnt ++;
+
+         }
+         return cnt;
+     }
+
+
