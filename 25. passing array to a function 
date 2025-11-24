@@ -1,0 +1,16 @@
+ //passing array to a function
+#include <stdio.h>
+#include <stdlib.h>
+
+void display(int arr[],int n){
+for(int i=0;i<n;i++){
+    printf("%d\n",arr[i]);
+}
+
+
+}
+int main(){
+int num[]={10 ,20 ,30 ,40 ,50 };
+display(num,5); // passing array to function
+
+}

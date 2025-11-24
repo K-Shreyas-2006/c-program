@@ -1,0 +1,8 @@
+//without arguments and without return value
+#include<stdio.>
+void printsum(int a, int b){
+printf("sum = %d\n",a+b);
+}
+int main(){
+printsum(5,7);
+}

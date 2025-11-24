@@ -1,0 +1,18 @@
+//to demonstrate pointer arithmetic
+
+#include <stdio.h>
+int main()
+{
+
+    int arr[]={5 , 10, 15, 20, 25, };
+    int*ptr = arr;
+
+    printf("ptr = %p, *ptr = %d\n",ptr,*ptr);
+    ptr++;
+    //(adds sizeof(int))
+    printf(" after ptr++: ptr + %p, *ptr = %d\n",ptr, *ptr);
+    ptr += 2;
+    printf("ater ptr += 2 :ptr = %p,*ptr = %d\n", ptr, *ptr);
+    return 0;
+
+}

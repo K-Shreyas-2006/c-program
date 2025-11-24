@@ -1,0 +1,26 @@
+//callback function
+
+#include<stdio.h>
+
+// this is the callback function
+void sayhello(){
+printf("hello, student\n");
+
+}
+// this function takes another function as input
+void studentwork(void(*callbackfunc)()){
+printf("std is doing hw...\n");
+
+
+//after finisdhing call the teacher back
+callbackfunc();
+
+}
+
+int main(){
+//pass the teaccher phone
+//number(function adress)
+studentwork(sayhello);
+return 0;
+
+}
