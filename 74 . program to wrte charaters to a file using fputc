@@ -1,0 +1,19 @@
+// program to wrte charaters to a file using fputc
+#include <stdio.h>
+int main()
+{
+    FILE *fp;
+    fp = fopen("example .txt ","w");
+    if(fp == NULL)
+    {
+        printf("file opening failed!\n");
+        return 1;
+    }
+    fputc('A',fp);
+    fputc('\n',fp);
+    fputc('B',fp);
+    fclose(fp);
+    printf("charaters written successfully.\n");
+    return 0;
+ 
+}

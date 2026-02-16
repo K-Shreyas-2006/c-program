@@ -1,0 +1,26 @@
+// program to read  characters from file using fgetc()
+#include <stdio.h>
+union data{
+int i;
+float f;
+char ch;
+
+};
+int main()
+{
+    union data d ;
+    d.i= 10;
+    printf("d.i=%d\n",d.i);
+    d.f = 5.56;
+    printf("d.f=%.2f\n",d.f);
+    d.ch= 'a';
+    printf("d.ch= %c\n", d.ch);
+    //notice previous values are over writen
+
+    printf("\n after all assignments:\n");
+    printf("d.i= %d (garbage)\n",d.i);
+        printf("d.f= %.2f (garbage)\n",d.f);
+
+        return 0;
+
+}

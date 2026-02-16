@@ -1,0 +1,19 @@
+//free ()
+
+#include<stdio.h>
+#include <stdlib.h>
+int main()
+{
+    int *data;
+    data = (int *)malloc (4 *sizeof(int));
+    if(data==NULL)
+    {
+        printf(" not allocated:\n");return 1;}
+        printf("allocated successfully\n");
+
+
+    free(data);
+     printf("allocated successfully\n");
+     return 0 ;
+}
+
