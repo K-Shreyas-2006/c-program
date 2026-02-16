@@ -1,0 +1,24 @@
+//)write a c program using structure to store a details of a book i(title , author, prize) 5 books included
+
+
+#include<stdio.h>
+struct book
+{
+    char title[20];
+    char author[20];
+    int price;
+};
+int main()
+{
+    struct book b1={"one piece1", "echiro oda",800} ;
+    struct book b2={"one piece2", "echiro oda",800} ;
+    struct book b3={"one piece3", "echiro oda",800} ;
+    struct book b4={"one piece4", "echiro oda",800} ;
+    struct book b5={"one piece5", "echiro oda",800} ;
+    struct book *book[5]={&b1,&b2,&b3,&b4,&b5};
+    for (int i=0;i<5;i++)
+    {
+        printf("%s %s %d\n" , book[i]->title,book[i]->author,book[i]->price);
+    }
+    return 0;
+}

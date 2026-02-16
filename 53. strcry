@@ -1,0 +1,12 @@
+//strcry
+#include<stdio.h>
+#include <string.h>
+int main()
+{
+    char source[] ="wecome";
+    char destination[20];
+    strcpy(destination,source);
+    printf("copied string: %s", destination);
+    return 0;
+
+}

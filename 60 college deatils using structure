@@ -1,0 +1,28 @@
+//college deatils using structure
+
+#include<stdio.h>
+
+struct department
+{
+    char cse[10];
+    char it[10];
+    char aiml[10];
+    char data [10];
+};
+
+struct student
+{
+    char college[20] ;
+    char name [20];
+    char city[20];
+    struct department dep;
+};
+
+int main ()
+{
+    struct student s1 = {"garden city college ", "kiran", "bangluru" , ("computer science ","info tech","artificial int and  machine learning", " data science")};
+    printf("college = %s\n  name = %s\n dep = %s/%s/%s/%s \n ", s1.college ,s1.name, s1.dep.cse, s1.dob.mon ,s1.dob.yr);
+
+    return 0;
+}
+

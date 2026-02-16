@@ -1,0 +1,12 @@
+// write a c program to open a file (a file text file ,word file, pdf that can be used as a path)which contains user information
+#include<stdio.h>
+#include<stdlib.h>
+int main ()
+{
+    char path [50];
+    printf("enter the path:");
+    scanf("%s",&path);
+    system (path);
+    return 0;
+
+}

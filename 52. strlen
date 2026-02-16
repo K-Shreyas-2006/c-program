@@ -1,0 +1,10 @@
+//strlen
+#include<stdio.h>
+#include<string.h>
+
+int main(){
+char word[] = "programing";
+printf("length: %lu", strlen(word));
+return 0;
+
+}
